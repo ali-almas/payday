@@ -1,0 +1,24 @@
+1. I spend almost two days on coding. I would like to add Coordinator pattern if i had more time, because i think it is very useful when to design project architecture in MVVM
+
+2. Swift Result Types. Before it was a little bit compound to work with closures.
+
+3. Firebase Crashlyisting, Instabug and this kind of tools I have used to track crash and performance issues
+
+4. I generally use Postman to find issues and debug apis
+
+5. I would make transactions depends on account id and accounts depends on client id, because all of them comes in one request an require developer to filter for according ids, and it contribute to slower performance.
+
+6.
+
+{
+    "name": "Ali",
+    "surname": "Almasli",
+    "gender": "Male",
+    "birthday": "07.09.1998",
+    "phoneNumber": "+994507825544",
+    "email": "ali.almasli.98@gmail.com",
+    "location": {
+        "country": "Azerbaijan",
+        "city": "Baku"
+    }
+}
