@@ -7,12 +7,6 @@
 
 import CoreData
 
-protocol TransactionPersistentStorage {
-    func fetchTransactions(completion: @escaping (Result<Transactions, Error>) -> Void)
-    func clearTransactions(completion: @escaping (Result<Bool, Error>) -> Void)
-    func saveTransaction(transaction: TransactionEntity, completion: @escaping (Result<TransactionEntity, Error>) -> Void)
-}
-
 final class TransactionPersistentStorageImpl {
     private let coreDataStorage: CoreDataStorage
     

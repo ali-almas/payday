@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol TransactionFetchListUseCase {
+protocol TransactionFetchUseCase {
     func execute(completion: @escaping (Result<Transactions, CoreDataStorageError>) -> Void)
 }
 
-final class TransactionPersistentListUseCaseImpl {
+final class TransactionFetchUseCaseImpl {
     private let transactionPersistentStorage: TransactionPersistentStorage
     
     init(transactionPersistentStorage: TransactionPersistentStorage) {
@@ -19,7 +19,7 @@ final class TransactionPersistentListUseCaseImpl {
     }
 }
 
-extension TransactionPersistentListUseCaseImpl: TransactionFetchListUseCase {
+extension TransactionFetchUseCaseImpl: TransactionFetchUseCase {
     func execute(completion: @escaping (Result<Transactions, CoreDataStorageError>) -> Void) {
         transactionPersistentStorage.fetchTransactions { (result) in
             switch result {

@@ -11,7 +11,7 @@ class DashboardController: BaseController {
     
     lazy var viewModel: DashboardViewModel = {
         let container = DIContainer.shared
-        let transactionPersistentListUseCase = container.resolve(type: TransactionFetchListUseCase.self)
+        let transactionPersistentListUseCase = container.resolve(type: TransactionFetchUseCase.self)
         let model = DashboardViewModel(transactionListUseCase: transactionPersistentListUseCase)
         model.delegate = self
         return model

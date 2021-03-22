@@ -21,7 +21,7 @@ class TransactionsController: BaseController {
     
     lazy var viewModel: TransactionsViewModel = {
         let container = DIContainer.shared
-        let transactionPersistentListUseCase = container.resolve(type: TransactionFetchListUseCase.self)
+        let transactionPersistentListUseCase = container.resolve(type: TransactionFetchUseCase.self)
         let model = TransactionsViewModel(transactionPersistentListUseCase: transactionPersistentListUseCase)
         model.delegate = self
         return model

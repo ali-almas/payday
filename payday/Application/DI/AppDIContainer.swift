@@ -32,7 +32,7 @@ final class AppDIContainer {
         container.register(type: RegistrationUseCase.self, component: ResgistrationUseCaseImpl(authRepository: authRepository))
         container.register(type: AccountListUseCase.self, component: AccountListUseCaseImpl(accountRepository: accountRepository))
         container.register(type: TransactionListUseCase.self, component: TransactionListUseCaseImpl(transactionRepository: transactionRepository))
-        container.register(type: TransactionFetchListUseCase.self, component: TransactionPersistentListUseCaseImpl(transactionPersistentStorage: transactionPersistentStoarage))
+        container.register(type: TransactionFetchUseCase.self, component: TransactionFetchUseCaseImpl(transactionPersistentStorage: transactionPersistentStoarage))
         container.register(type: TransactionSaveUseCase.self, component: TransactionSaveUseCaseImpl(transactionPersistentStorage: transactionPersistentStoarage))
         container.register(type: TransactionClearUseCase.self, component: TransactionClearUseCaseImpl(transactionPersistentStorage: transactionPersistentStoarage))
     }

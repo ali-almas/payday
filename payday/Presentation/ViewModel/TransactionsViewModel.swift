@@ -14,9 +14,9 @@ protocol TransactionsViewModelDelegate: ErrorDelegate, ReloadDelegate {
 class TransactionsViewModel: BaseViewModel {
     weak var delegate: TransactionsViewModelDelegate?
     
-    private var transactionPersistentListUseCase: TransactionFetchListUseCase
+    private var transactionPersistentListUseCase: TransactionFetchUseCase
     
-    init(transactionPersistentListUseCase: TransactionFetchListUseCase) {
+    init(transactionPersistentListUseCase: TransactionFetchUseCase) {
         self.transactionPersistentListUseCase = transactionPersistentListUseCase
     }
     

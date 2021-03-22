@@ -35,17 +35,18 @@
 		330B5939260741A000F9CBF4 /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B5938260741A000F9CBF4 /* HTTP.swift */; };
 		330B593C260741DD00F9CBF4 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B593B260741DD00F9CBF4 /* NetworkError.swift */; };
 		330B5941260747BA00F9CBF4 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330B5940260747BA00F9CBF4 /* DIContainer.swift */; };
-		33A422142607EBF8002B5EDB /* TransactionPersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A422132607EBF8002B5EDB /* TransactionPersistentStorage.swift */; };
+		33A422142607EBF8002B5EDB /* TransactionPersistentStorageImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A422132607EBF8002B5EDB /* TransactionPersistentStorageImpl.swift */; };
 		33A422352608931C002B5EDB /* TransactionCoreEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A422332608931C002B5EDB /* TransactionCoreEntity+CoreDataClass.swift */; };
 		33A422362608931C002B5EDB /* TransactionCoreEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A422342608931C002B5EDB /* TransactionCoreEntity+CoreDataProperties.swift */; };
 		33A4223B26089469002B5EDB /* TransactionEntity+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4223A26089469002B5EDB /* TransactionEntity+Mapping.swift */; };
-		33A4223F26089816002B5EDB /* TransactionFetchListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4223E26089816002B5EDB /* TransactionFetchListUseCase.swift */; };
+		33A4223F26089816002B5EDB /* TransactionFetchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4223E26089816002B5EDB /* TransactionFetchUseCase.swift */; };
 		33A4224226089E16002B5EDB /* TransactionSaveUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4224126089E16002B5EDB /* TransactionSaveUseCase.swift */; };
 		33A422452608A514002B5EDB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A422442608A514002B5EDB /* Observable.swift */; };
 		33A422492608A54E002B5EDB /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A422482608A54E002B5EDB /* Indicator.swift */; };
 		33A4224E2608BC3A002B5EDB /* Array+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4224D2608BC3A002B5EDB /* Array+Ext.swift */; };
 		33A422522608CE2B002B5EDB /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A422512608CE2B002B5EDB /* Date+Ext.swift */; };
 		33A422562608D57C002B5EDB /* TransactionClearUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A422552608D57C002B5EDB /* TransactionClearUseCase.swift */; };
+		33A4225C2608E7BE002B5EDB /* TransactionPersistentStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A4225B2608E7BE002B5EDB /* TransactionPersistentStorage.swift */; };
 		33CD262626074ADA002BF5A3 /* DIContainerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CD262526074ADA002BF5A3 /* DIContainerProtocol.swift */; };
 		33CD262926074B31002BF5A3 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CD262826074B31002BF5A3 /* AppDIContainer.swift */; };
 		33CD262F2607559C002BF5A3 /* ErrorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CD262E2607559C002BF5A3 /* ErrorDelegate.swift */; };
@@ -107,17 +108,18 @@
 		330B5938260741A000F9CBF4 /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
 		330B593B260741DD00F9CBF4 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		330B5940260747BA00F9CBF4 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		33A422132607EBF8002B5EDB /* TransactionPersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPersistentStorage.swift; sourceTree = "<group>"; };
+		33A422132607EBF8002B5EDB /* TransactionPersistentStorageImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPersistentStorageImpl.swift; sourceTree = "<group>"; };
 		33A422332608931C002B5EDB /* TransactionCoreEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TransactionCoreEntity+CoreDataClass.swift"; path = "payday/Domain/Entities/TransactionCoreEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
 		33A422342608931C002B5EDB /* TransactionCoreEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "TransactionCoreEntity+CoreDataProperties.swift"; path = "payday/Domain/Entities/TransactionCoreEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 		33A4223A26089469002B5EDB /* TransactionEntity+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransactionEntity+Mapping.swift"; sourceTree = "<group>"; };
-		33A4223E26089816002B5EDB /* TransactionFetchListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFetchListUseCase.swift; sourceTree = "<group>"; };
+		33A4223E26089816002B5EDB /* TransactionFetchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionFetchUseCase.swift; sourceTree = "<group>"; };
 		33A4224126089E16002B5EDB /* TransactionSaveUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionSaveUseCase.swift; sourceTree = "<group>"; };
 		33A422442608A514002B5EDB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		33A422482608A54E002B5EDB /* Indicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Indicator.swift; sourceTree = "<group>"; };
 		33A4224D2608BC3A002B5EDB /* Array+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Ext.swift"; sourceTree = "<group>"; };
 		33A422512608CE2B002B5EDB /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		33A422552608D57C002B5EDB /* TransactionClearUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionClearUseCase.swift; sourceTree = "<group>"; };
+		33A4225B2608E7BE002B5EDB /* TransactionPersistentStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionPersistentStorage.swift; sourceTree = "<group>"; };
 		33CD262526074ADA002BF5A3 /* DIContainerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerProtocol.swift; sourceTree = "<group>"; };
 		33CD262826074B31002BF5A3 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
 		33CD262E2607559C002BF5A3 /* ErrorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDelegate.swift; sourceTree = "<group>"; };
@@ -290,7 +292,7 @@
 				33CD263D26075A78002BF5A3 /* RegistrationUseCase.swift */,
 				33CD267226078F40002BF5A3 /* AccountListUseCase.swift */,
 				33CD264B26077690002BF5A3 /* TransactionListUseCase.swift */,
-				33A4223E26089816002B5EDB /* TransactionFetchListUseCase.swift */,
+				33A4223E26089816002B5EDB /* TransactionFetchUseCase.swift */,
 				33A4224126089E16002B5EDB /* TransactionSaveUseCase.swift */,
 				33A422552608D57C002B5EDB /* TransactionClearUseCase.swift */,
 			);
@@ -315,6 +317,7 @@
 				330B59192607371C00F9CBF4 /* AuthRepository.swift */,
 				33CD26762607903D002BF5A3 /* AccountRepository.swift */,
 				33CD265226077771002BF5A3 /* TransactionRepository.swift */,
+				33A4225B2608E7BE002B5EDB /* TransactionPersistentStorage.swift */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -469,7 +472,7 @@
 			isa = PBXGroup;
 			children = (
 				33A4223926089450002B5EDB /* DataMapping */,
-				33A422132607EBF8002B5EDB /* TransactionPersistentStorage.swift */,
+				33A422132607EBF8002B5EDB /* TransactionPersistentStorageImpl.swift */,
 			);
 			path = CoreDataStorage;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				330B591A2607371C00F9CBF4 /* AuthRepository.swift in Sources */,
 				33CD267F26079666002BF5A3 /* UserDefaults.swift in Sources */,
 				33CD268C2607D46B002BF5A3 /* DashboardViewModel.swift in Sources */,
+				33A4225C2608E7BE002B5EDB /* TransactionPersistentStorage.swift in Sources */,
 				33CD264C26077690002BF5A3 /* TransactionListUseCase.swift in Sources */,
 				330B58FE2605EC5200F9CBF4 /* RegistrationController.swift in Sources */,
 				330B592726073DB700F9CBF4 /* EndpointDelegate.swift in Sources */,
@@ -593,7 +597,7 @@
 				330B592A26073E4100F9CBF4 /* Endpoint.swift in Sources */,
 				33CD264F2607772D002BF5A3 /* TransactionRepositoryImpl.swift in Sources */,
 				330B58F02605DFF600F9CBF4 /* InputModel.swift in Sources */,
-				33A422142607EBF8002B5EDB /* TransactionPersistentStorage.swift in Sources */,
+				33A422142607EBF8002B5EDB /* TransactionPersistentStorageImpl.swift in Sources */,
 				330B58DF2605D13B00F9CBF4 /* InputCell.swift in Sources */,
 				33A422492608A54E002B5EDB /* Indicator.swift in Sources */,
 				33CD263E26075A78002BF5A3 /* RegistrationUseCase.swift in Sources */,
@@ -606,7 +610,7 @@
 				33CD265326077771002BF5A3 /* TransactionRepository.swift in Sources */,
 				330B5939260741A000F9CBF4 /* HTTP.swift in Sources */,
 				330B590A2606093500F9CBF4 /* Message.swift in Sources */,
-				33A4223F26089816002B5EDB /* TransactionFetchListUseCase.swift in Sources */,
+				33A4223F26089816002B5EDB /* TransactionFetchUseCase.swift in Sources */,
 				330B5917260735BC00F9CBF4 /* LoginUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

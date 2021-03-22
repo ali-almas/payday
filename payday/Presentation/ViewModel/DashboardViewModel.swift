@@ -14,9 +14,9 @@ protocol DashboardViewModelDelegate: ErrorDelegate, ReloadDelegate {
 class DashboardViewModel: BaseViewModel {
     weak var delegate: DashboardViewModelDelegate?
     
-    private let transactionListUseCase: TransactionFetchListUseCase
+    private let transactionListUseCase: TransactionFetchUseCase
     
-    init(transactionListUseCase: TransactionFetchListUseCase) {
+    init(transactionListUseCase: TransactionFetchUseCase) {
         self.transactionListUseCase = transactionListUseCase
     }
     
